@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - David</title>
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabecera de la pagina con menu de navegacion -->
+    <header>
+        <div class="logo">David Francisco </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+                <li><a href="#proyectos">PROYECTOS</a></li>
+                <li><a href="#hobbys">HOBBYS</a></li>
+                <li><a href="#contacto">CONTACTAME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor principal de la pagina -->
+    <main>
+        <!-- Seccion de inicio o presentacion -->
+        <section id="inicio">
+            <div class="hero-texto">
+                <p>DISPONIBLE PARA COLABORAR - QUITO, ECUADOR</p>
+                <h1>Hola, soy David,<br>Desarrollador de Software</h1>
+                <p>Estudiante de cuarto semestre de Ingeniería de Software. Diseño y construyo software útil y enfocado en resolver problemas reales.</p>
+            </div>
+            <div class="hero-imagen">
+                <!-- Foto de perfil -->
+                <img src="tu-foto.jpg" alt="Miretrato">
+            </div>
+        </section>
+
+        <!-- Seccion de informacion personal -->
+        <section id="sobre-mi">
+            <div class="seccion-cabecera">
+                <span>01</span>
+                <h2>Sobre mí</h2>
+            </div>
+            <div class="seccion-contenido">
+                <p>Tengo 20 años y prefiero que me digan simplemente Deivit. Estoy cursando el cuarto semestre de Ingeniería de Software en la Universidad de las Fuerzas Armadas ESPE.</p>
+                <p>Me interesa el desarrollo de sistemas y la resolución de problemas lógicos. Entre las tecnologías que manejo se encuentran <strong>C++, Python, Java y R Studio</strong>.</p>
+                <p>Además, tengo experiencia en el manejo y configuración de entornos Linux, utilizando distribuciones como <strong>Omarchy Linux y CachyOS</strong> con gestores de ventanas como <strong>Hyprland y Bspwm</strong>.</p>
+            </div>
+        </section>
+
+        <!-- Seccion del portafolio de trabajos -->
+        <section id="proyectos">
+            <div class="seccion-cabecera">
+                <span>02</span>
+                <h2>Proyectos</h2>
+            </div>
+            
+            <div class="contenedor-proyectos">
+                <!-- Articulo de proyecto Contyx -->
+                <article class="proyecto">
+                    <div class="proyecto-info">
+                        <span>PROYECTO 01</span>
+                        <h3>Sistema Contyx</h3>
+                        <p>Sistema desarrollado en Python para automatizar la lectura y el procesamiento de facturas electrónicas XML emitidas por el SRI y generar reportes financieros.</p>
+                    </div>
+                    <div class="proyecto-imagen">
+                        <img src="img-contyx.jpg" alt="Captura del Sistema Contyx">
+                    </div>
+                </article>
+
+                <!-- Articulo de proyecto Omarchy Monocraft -->
+                <article class="proyecto">
+                    <div class="proyecto-info">
+                        <span>PROYECTO 02</span>
+                        <h3>Df-Omarchy-Monocraft</h3>
+                        <p>Configuración de dotfiles y entorno para Omarchy Linux. Integración personalizada del sistema y terminal utilizando la tipografía Monocraft.</p>
+                        <br>
+                        <a href="https://github.com/LilDeivit/Df-Omarchy-Monocraft" target="_blank" style="color: #a0a0a0; text-decoration: underline; font-size: 0.9rem;">Ver repositorio en GitHub ↗</a>
+                    </div>
+                    <div class="proyecto-imagen">
+                        <img src="img-omarchy.jpg" alt="Captura de entorno Omarchy Monocraft">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seccion de pasatiempos -->
+        <section id="hobbys">
+            <div class="seccion-cabecera">
+                <span>03</span>
+                <h2>Hobbys</h2>
+                <p>Lo que hago cuando no programo</p>
+            </div>
+
+            <div class="cuadricula-hobbys">
+                <!-- Elemento de Gaming -->
+                <figure class="hobby-item">
+                    <img src="img-gaming.jpg" alt="Videojuegos">
+                    <figcaption>
+                        <h4>Videojuegos</h4>
+                        <p>Partidas de Minecraft, Rocket League, Fortnite y Valorant.</p>
+                    </figcaption>
+                </figure>
+
+                <!-- Elemento de Bicicleta -->
+                <figure class="hobby-item">
+                    <img src="img-bici.jpg" alt="Bicicleta al aire libre">
+                    <figcaption>
+                        <h4>Bicicleta</h4>
+                        <p>Rutas largas y ciclismo al aire libre.</p>
+                    </figcaption>
+                </figure>
+
+                <!-- Elemento de Futbol -->
+                <figure class="hobby-item">
+                    <img src="img-futbol.jpg" alt="Balon de futbol">
+                    <figcaption>
+                        <h4>Fútbol</h4>
+                        <p>Deporte y partidos con amigos.</p>
+                    </figcaption>
+                </figure>
+
+                <!-- Elemento de musica pop/indie -->
+                <figure class="hobby-item">
+                    <img src="img-musica.jpg" alt="Auriculares y musica">
+                    <figcaption>
+                        <h4>Música</h4>
+                        <p>Escuchar temas de Joji, Mac DeMarco y otras cosas.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de pagina con enlaces de contacto -->
+    <footer id="contacto">
+        <div class="seccion-cabecera">
+            <span>04</span>
+            <h2>Contacto</h2>
+        </div>
+        <div class="info-contacto">
+            <a href="mailto:dfsigsi@espe.edu.ec" style="font-size: 1.5rem;">dfsigsi@espe.edu.ec</a>
+            <a href="mailto:davidsigsi@gmail.com" style="font-size: 1.5rem; margin-bottom: 20px;">davidsigsi@gmail.com</a>
+            
+            <div style="margin-top: 30px;">
+                <a href="https://github.com/LilDeivit" target="_blank" style="font-size: 1.2rem;">GitHub ↗</a>
+                <a href="https://www.tiktok.com/@.lilxz_" target="_blank" style="font-size: 1.2rem;">TikTok ↗</a>
+                <a href="https://www.instagram.com/lilznx_?xtok=OTRnamdqYmlvbHds" target="_blank" style="font-size: 1.2rem;">Instagram ↗</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

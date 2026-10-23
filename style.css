@@ -1,0 +1,294 @@
+/* =========================================
+   IMPORTACION DE LA FUENTE (LOCAL)
+   ========================================= */
+@font-face {
+    font-family: 'Monocraft';
+    src: url('Monocraft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* =========================================
+   RESETEO BASICO Y VARIABLES
+   ========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+    font-family: 'Monocraft', monospace; 
+}
+
+body {
+    background-color: #121212; 
+    color: #ffffff; 
+    line-height: 1.6;
+}
+
+/* =========================================
+   TIPOGRAFIA Y COLORES PRINCIPALES
+   ========================================= */
+h1, h2, h3, h4, .logo {
+    color: #4AF626; 
+    margin-bottom: 20px;
+    font-weight: normal; 
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #a0a0a0; 
+    font-size: 0.9rem; 
+    margin-bottom: 15px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+a:hover {
+    color: #FF6347; 
+}
+
+/* =========================================
+   CABECERA Y NAVEGACION (HEADER)
+   ========================================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: sticky; 
+    top: 0;
+    background-color: #121212;
+    z-index: 100;
+    border-bottom: 1px solid #333; 
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 0.9rem;
+}
+
+/* =========================================
+   ESTILOS COMUNES DE LAS SECCIONES (MAIN)
+   ========================================= */
+/* SE REDUJO EL ESPACIADO GENERAL ENTRE SECCIONES DE 100px a 50px */
+section, footer {
+    padding: 50px 10%;
+}
+
+.seccion-cabecera {
+    margin-bottom: 30px; /* Reducido de 50px */
+}
+
+.seccion-cabecera span {
+    color: #FF6347; 
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   SECCION: INICIO (HERO)
+   ========================================= */
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 60vh; /* Reducido para no verse tan estirado */
+}
+
+.hero-texto {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.hero-texto p:first-child {
+    font-size: 0.8rem;
+    color: #4AF626; 
+    margin-bottom: 20px;
+}
+
+.hero-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-imagen img {
+    max-width: 100%;
+    width: 350px;
+    border-radius: 10px; 
+    object-fit: cover;
+}
+
+/* =========================================
+   SECCION: SOBRE MI
+   ========================================= */
+.sobre-mi-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1000px;
+}
+
+.sobre-mi-texto {
+    flex: 1;
+}
+
+.sobre-mi-texto p {
+    font-size: 1rem; 
+    color: #d0d0d0; 
+    margin-bottom: 20px;
+}
+
+.sobre-mi-texto strong {
+    color: #4AF626; 
+    font-weight: normal;
+}
+
+.sobre-mi-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-mi-imagen img {
+    max-width: 100%;
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* =========================================
+   SECCION: PROYECTOS
+   ========================================= */
+.contenedor-proyectos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Reducido de 80px */
+}
+
+.proyecto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.proyecto-info {
+    flex: 1;
+}
+
+.proyecto-info span {
+    font-size: 0.9rem;
+    color: #FF6347; 
+    display: block;
+    margin-bottom: 15px;
+}
+
+.proyecto-imagen {
+    flex: 1;
+}
+
+.proyecto-imagen img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+/* =========================================
+   SECCION: HOBBYS
+   ========================================= */
+.cuadricula-hobbys {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 20px; /* Reducido de 40px */
+}
+
+.hobby-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; 
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.hobby-item p {
+    font-size: 0.8rem; 
+}
+
+/* =========================================
+   SECCION: CONTACTO (FOOTER)
+   ========================================= */
+.enlaces-horizontales {
+    display: flex;
+    gap: 20px; /* Reducido para que todo quepa en una linea */
+    margin-bottom: 30px;
+    flex-wrap: wrap; 
+    align-items: center;
+}
+
+.enlaces-horizontales a {
+    font-size: 1.1rem; /* Tamaño unificado para que se vea limpio */
+}
+
+/* =========================================
+   DISEÑO RESPONSIVO (MOVILES Y TABLETS)
+   ========================================= */
+@media (max-width: 900px) {
+    #inicio, .proyecto, .sobre-mi-layout {
+        flex-direction: column;
+    }
+    
+    .hero-texto, .sobre-mi-texto {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .enlaces-horizontales {
+        flex-direction: column; 
+        gap: 15px;
+    }
+}
