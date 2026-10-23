@@ -3,7 +3,7 @@
    ========================================= */
 @font-face {
     font-family: 'Monocraft';
-    src: url('Monocraft.ttf') format('truetype');
+    src: url('./Fuentes/Monocraft.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -99,13 +99,13 @@ nav a {
 /* =========================================
    ESTILOS COMUNES DE LAS SECCIONES (MAIN)
    ========================================= */
-/* SE REDUJO EL ESPACIADO GENERAL ENTRE SECCIONES DE 100px a 50px */
+
 section, footer {
     padding: 50px 10%;
 }
 
 .seccion-cabecera {
-    margin-bottom: 30px; /* Reducido de 50px */
+    margin-bottom: 30px; 
 }
 
 .seccion-cabecera span {
@@ -122,7 +122,7 @@ section, footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 60vh; /* Reducido para no verse tan estirado */
+    min-height: 60vh; 
 }
 
 .hero-texto {
@@ -193,7 +193,7 @@ section, footer {
 .contenedor-proyectos {
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Reducido de 80px */
+    gap: 40px;
 }
 
 .proyecto {
@@ -230,7 +230,7 @@ section, footer {
 .cuadricula-hobbys {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
-    gap: 20px; /* Reducido de 40px */
+    gap: 20px; 
 }
 
 .hobby-item img {
@@ -250,14 +250,14 @@ section, footer {
    ========================================= */
 .enlaces-horizontales {
     display: flex;
-    gap: 20px; /* Reducido para que todo quepa en una linea */
+    gap: 20px; 
     margin-bottom: 30px;
     flex-wrap: wrap; 
     align-items: center;
 }
 
 .enlaces-horizontales a {
-    font-size: 1.1rem; /* Tamaño unificado para que se vea limpio */
+    font-size: 1.1rem; 
 }
 
 /* =========================================
